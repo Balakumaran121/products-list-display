@@ -14,11 +14,9 @@ const Header = () => {
           {navList?.map((item) => (
             <li
               key={item.value}
-              className={
-                item.underline
-                  ? "underline hover:cursor-pointer"
-                  : "hover:cursor-pointer"
-              }
+              className={`hover:cursor-pointer ${
+                item.underline ? "underline" : ""
+              }`}
             >
               {item.label}
             </li>
